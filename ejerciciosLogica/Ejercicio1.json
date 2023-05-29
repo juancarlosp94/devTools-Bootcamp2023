@@ -1,0 +1,12 @@
+{
+  "name": "ejrecicioslogica",
+  "version": "1.0.0",
+  "description": "Primer proyecto JS",
+  "main": "index.js",
+  "scripts": {
+    "saludo": "Hola este es mi primer ejercicio con Node en el mejor Bootcamp de programación del mundo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Perdigón",
+  "license": "ISC"
+}
