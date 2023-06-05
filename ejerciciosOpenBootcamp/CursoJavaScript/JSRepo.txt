@@ -1,2 +1,0 @@
-Este es el link al repositorio del curso de JavaScript 
-https://github.com/Open-Bootcamp/JavaScript-Basico
