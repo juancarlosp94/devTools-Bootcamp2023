@@ -15,13 +15,13 @@ function next_pal(num) {
         }
         
     }
-    console.log(`The closest palindrome number to ${my_number} is ${nextNum}`);
+    return `The closest palindrome number to ${my_number} is ${nextNum}`;
 }
 
-next_pal(11)
-next_pal(188)
-next_pal(191)
-next_pal(2541)
+console.log(next_pal(11))
+console.log(next_pal(188))
+console.log(next_pal(191))
+console.log(next_pal(2541))
 
 
 // -------- Solution with validation -------------
