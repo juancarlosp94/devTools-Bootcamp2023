@@ -9,14 +9,14 @@ function countNameRepetitions(names) {
         // if count[e] object exist, if not, then it will set a default "" empty string and add an asterisk. If it exists then it will
         // add an additional asterisk. ("count[e]":"count[e] exists? if yes add an asterisk (+ "*"): if not then set "" and add *)
         
-        count[e] = (count[e] || "") + "*"
+        count[e] = (count[e] || "") + "*";
     });
 
     for(const [key,value] of Object.entries(count)){
-        console.log(`// ${key}: '${value}'`);
+        return `// ${key}: '${value}'`;
     }
 }
 
-const resultado = countNameRepetitions(nombres);
+console.log(countNameRepetitions(nombres));
 
 
