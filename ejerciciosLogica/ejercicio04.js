@@ -4,19 +4,22 @@ Si el número es divisible tanto por 3 como por 5, debes imprimir "FizzBuzz".
 Si el número no es divisible ni por 3 ni por 5, debes imprimir el número tal cual.*/
 
 const fizzBuzz = n => {
+
+    let result = ''
+    
     for(let i = 1; i <= n; i++) {
         
-        if(i % 3 == 0 && i % 5 == 0) {
-            console.log('FizzBuzz');
-        } else if(i % 3 == 0) {
-            console.log('Fizz');
-        } else if(i % 5 == 0) {
-            console.log('Buzz');
+        if(i % 3 === 0 && i % 5 === 0) {
+            result += 'FizzBuzz\n';
+        } else if(i % 3 === 0) {
+            result += 'Fizz\n';
+        } else if(i % 5 === 0) {
+            result += 'Buzz\n';
         } else {
-            console.log(i);
+            result += i + '\n';
         }
     }
-
+    return result
 }
 
-fizzBuzz(15)
+console.log(fizzBuzz(15));
