@@ -1,36 +1,21 @@
-// Draw and X
-
-// const drawX = (tamano) => {
-//     spaces = " *" * tamano;
-//     asterisk = "*"
-//     for(let i = 0; i <= tamano ; i++){
-//     console.log(asterisk = " " + asterisk);
-     
-//     }
-//     console.log(spaces);
-// }
-
-// drawX(5)
-
 const drawX = tamano => {
+
+    let result = '';
     
     for(let i = 0; i < tamano ; i++){
-        let xPattern = ""
-        
+        let xPattern = "";
+
         for(let j = 0; j < tamano ; j++) {
-            
+
             if(i === j || j === tamano - i - 1 ){
-                
-                xPattern += "*"
-            }else{
-                
-                xPattern += " "
+                xPattern += "*";
+            }else{   
+                xPattern += " ";
             }
-            
         } 
-        console.log(xPattern); 
+        result += xPattern + '\n';
+    }
+    return result;
 }
 
-}
-
-drawX(7)
+console.log(drawX(7));
